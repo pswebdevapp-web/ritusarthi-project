@@ -7,10 +7,8 @@ build/
 
 # environment variables
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
 
 # logs
 logs
@@ -31,10 +29,11 @@ Thumbs.db
 .cache/
 coverage/
 
-# optional
+# optional databases
 *.sqlite
 *.db
 
+# media/files
 *.zip
 *.mp4
 *.mov
